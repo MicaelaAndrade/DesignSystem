@@ -2,20 +2,27 @@ import { Button, TextInput } from '@ignite-ui/react'
 import { Form } from './styles'
 import { ArrowRight } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
+import { z } from 'zod'
+
+const ClaimUsernameFormSchema = z.object({
+  username: z.string(),
+})
+
+type ClaimUsernameFormData = z.infer<typeof ClaimUsernameFormSchema>
 
 export function ClaimUserNameForm() {
-  const { register, handleSubmit } = useForm()
+  const { register, handleSubmit } = useForm<ClaimUsernameFormData>()
 
-  async function handlePreRegister(data: any) {
+  async function handleClaimUsername(data: ClaimUsernameFormData) {
     console.log(data)
   }
 
   return (
-    <Form as="form" onSubmit={handleSubmit(handlePreRegister)}>
+    <Form as="form" onSubmit={handleSubmit(handleClaimUsername)}>
       <TextInput
         size="sm"
         prefix="ignite.com/"
-        placeholder="swu-usuario"
+        placeholder="seu-usuário"
         {...register('username')}
       />
       <Button size="sm" type="submit">
