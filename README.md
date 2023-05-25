@@ -25,9 +25,10 @@ Siga as instruções abaixo para executar o projeto em sua máquina:
 
 1. Clone este repositório.
 2. Acesse a pasta do projeto.
-3. Instale as dependências utilizando o NPM ou Yarn: `npm install ou yarn install`
-4. Inicie o servidor do Next.js: `npm start dev`
-5. Em ambiente de desenvolvimento, é necessário configurar um container com o MySQL para o banco de dados.
+4. Versão do node: `18.12.1` 
+4. Instale as dependências utilizando o NPM ou Yarn: `npm install ou yarn install`
+5. Inicie o servidor do Next.js: `npm start dev`
+6. Em ambiente de desenvolvimento, é necessário configurar um container com o MySQL para o banco de dados.
 
 ---
 
