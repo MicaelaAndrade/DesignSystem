@@ -1,5 +1,5 @@
 <h1>
-  <img alt="Aplicação de agendamento de chamadas de vídeo conferência integrado com API do Google e o Calendar" title="Ignite Call" src='.github/cover.png' />
+  <img alt="Aplicação de agendamento de chamadas de vídeo conferência integrado com API do Google e o Calendar" title="Ignite Call" src='public/capa.png' />
 </h1>
 
 ## 💻 Projeto
