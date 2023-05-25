@@ -4,33 +4,30 @@
 
 ## 💻 Projeto
 
-<h3>
-  Projeto criado dentro da trilha de React Native 2022, Ignite Call é uma aplicação para agendamento de vídeo chamadas e conferência através da integração com o API do Google e o Calendar. Um projeto full stack utilizando o Nextjs como framework, aproveitando de suas APIs routes. Para o Deploy da aplicação, utilizaremos a plataforma Planet Scale para o Banco de Dados e a Vercel para a aplicação.
-</h3>
+O Ignite Call é uma aplicação desenvolvida durante a trilha de React Native do Ignite 2022. O objetivo da aplicação é agendar chamadas de vídeo e conferências, utilizando a integração com a API do Google e o Google Calendar. O projeto é desenvolvido como uma aplicação full stack utilizando o framework Next.js e suas APIs routes. Para o deploy da aplicação, utilizamos a plataforma Planet Scale para o banco de dados e a Vercel para hospedar a aplicação.
 
-----
+## ✨ Tecnologias
 
-## ✨ Tecnologia
+O projeto utiliza as seguintes tecnologias:
 
-- **[TypeScript](https://www.typescriptlang.org/)**
-- **[Axios](https://axios-http.com/docs/intro)**
-- **[React Hook Form](https://react-hook-form.com/)**
-- **[Zod](https://github.com/colinhacks/zod)**
-- **[Nextjs](https://nextjs.org/)**
-- **[Prisma](https://www.prisma.io/)**
-- **[TanStack-ReactQuery](https://tanstack.com/query/v4)**
-- **[DayJs](https://day.js.org/)**
-
----
-
+- [TypeScript](https://www.typescriptlang.org/)
+- [Axios](https://axios-http.com/docs/intro)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://github.com/colinhacks/zod)
+- [Next.js](https://nextjs.org/)
+- [Prisma](https://www.prisma.io/)
+- [TanStack-ReactQuery](https://tanstack.com/query/v4)
+- [Day.js](https://day.js.org/)
 
 ## 🚀 Como executar o projeto
 
-Em todos os projetos, ao acessar a pasta, é preciso baixar os pacotes com o NPM ou YARN.
+Siga as instruções abaixo para executar o projeto em sua máquina:
 
-- Instale as dependências com `npm install`.
-- Execute `npm run dev` para iniciar o servidor do Expo.
-- Em ambiente de desenvolvimento, devido o uso do MySql para Banco de Dados, é necessário a criação de um container com docker. Para meu processo de desenvolvimento, eu utilizei WSL no sistema operacional Windows 11, rodando o comando: `docker run --name mysqlignite -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 mysql:latest`, conforme orientado em aula.
+1. Clone este repositório.
+2. Acesse a pasta do projeto.
+3. Instale as dependências utilizando o NPM ou Yarn: `npm install ou yarn install`
+4. Inicie o servidor do Next.js: `npm start dev`
+5. Em ambiente de desenvolvimento, é necessário configurar um container com o MySQL para o banco de dados.
 
 ---
 
