@@ -1,9 +1,10 @@
-import { Button, TextInput, Text } from '@ignite-ui/react'
-import { ErrorText, Form, FormAnnotation } from './styles'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { Button, Text, TextInput } from '@ignite-ui/react'
+import router from 'next/router'
 import { ArrowRight } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
+import { ErrorText, Form, FormAnnotation } from './styles'
 
 const ClaimUsernameFormSchema = z.object({
   username: z
@@ -27,7 +28,9 @@ export function ClaimUserNameForm() {
   })
 
   async function handleClaimUsername(data: ClaimUsernameFormData) {
-    console.log(data)
+    const { username } = data
+    
+    router.push(`/register?username=${username}`)
   }
 
   return (
